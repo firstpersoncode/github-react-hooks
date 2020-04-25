@@ -1,0 +1,15 @@
+node_modules
+build
+dist
+.env
+yarn-error.log
+dist-dll
+coverage
+.DS_Store
+stats.*.json
+dump.rdb
+__snapshots__
+
+# IDE
+.idea
+.vscode

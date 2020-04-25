@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+      "__core__/*": ["./__core__/*"]
+    },
+    "typeRoots": ["node_modules/@types", "./@types"],
+    "skipLibCheck": true
+  },
+  "exclude": ["./dist", "./static", "./__core__/webpack"]
+}
