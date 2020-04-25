@@ -15,7 +15,7 @@ import {
     Avatar
 } from '@material-ui/core'
 import { ExpandMore, ChevronLeft, ChevronRight, Folder } from '@material-ui/icons'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import useStore from '~/store'
 import { SET_USER_REPOS_NEXT, SET_USER_REPOS_PREV, SET_USER_REPOS_PANEL } from '~/store/user'

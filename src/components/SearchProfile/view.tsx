@@ -128,8 +128,8 @@ const SearchProfile: FunctionComponent = () => {
                 <DialogContent style={{ backgroundColor: '#000' }}>
                     <Grid container spacing={2}>
                         {query.length
-                            ? query.map((q) => (
-                                  <Grid item xs={3}>
+                            ? query.map((q, i) => (
+                                  <Grid key={i} item xs={3}>
                                       <Button
                                           onClick={_openProfile(q.login || q.full_name)}
                                           fullWidth

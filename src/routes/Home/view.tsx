@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useEffect } from 'react'
+import React, { FunctionComponent } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Container, Grid, Box, Divider, LinearProgress } from '@material-ui/core'
 

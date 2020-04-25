@@ -11,7 +11,11 @@ const Footer: FunctionComponent = () => {
                 <Box p={2} textAlign="right">
                     <Typography>
                         &copy; Copyright 2020{' '}
-                        <a style={{ color: 'white' }} href="https://github.com/firstpersoncode" target="_blank">
+                        <a
+                            style={{ color: 'white' }}
+                            href="https://github.com/firstpersoncode"
+                            target="_blank"
+                            rel="noopener noreferrer">
                             @firstpersoncode
                         </a>
                     </Typography>

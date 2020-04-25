@@ -3,7 +3,6 @@ const {
     optimize: { ModuleConcatenationPlugin },
     NoEmitOnErrorsPlugin,
 } = require('webpack')
-const CompressionPlugin = require('compression-webpack-plugin')
 
 const { appDir } = require('./dirs')
 
@@ -51,7 +50,7 @@ const webpackConfigs = {
         },
         runtimeChunk: false,
     },
-    plugins: [new CompressionPlugin(), new ModuleConcatenationPlugin(), new NoEmitOnErrorsPlugin()],
+    plugins: [ new ModuleConcatenationPlugin(), new NoEmitOnErrorsPlugin()],
     devtool: 'cheap-module-source-map',
 }
 

@@ -39,6 +39,7 @@ const Project: FunctionComponent = () => {
                     type: SET_ERROR,
                     payload: {
                         message:
+                            // eslint-disable-next-line
                             "Failed to load the README.md file. The project probably doesn't have the README.md file or try to check your connection.",
                         statusCode: err.statusCode || 500
                     }
@@ -99,7 +100,8 @@ const Project: FunctionComponent = () => {
                                         component="a"
                                         href={project.html_url}
                                         startIcon={<GitHub />}
-                                        target="_blank">
+                                        target="_blank"
+                                        rel="noopener noreferrer">
                                         <Typography style={{ textTransform: 'lowercase' }}>
                                             @{project.full_name}
                                         </Typography>
@@ -110,7 +112,9 @@ const Project: FunctionComponent = () => {
                                     </Box>
                                     <Box display="flex" alignItems="center">
                                         {Object.keys(languages).length ? (
-                                            Object.keys(languages).map((lang) => <Chip color="primary" label={lang} />)
+                                            Object.keys(languages).map((lang, i) => (
+                                                <Chip key={i} color="primary" label={lang} />
+                                            ))
                                         ) : languagesFetch ? (
                                             <LinearProgress />
                                         ) : null}

@@ -79,7 +79,8 @@ const Profile: FunctionComponent = () => {
                                 component="a"
                                 href={user.html_url}
                                 startIcon={<GitHub />}
-                                target="_blank">
+                                target="_blank"
+                                rel="noopener noreferrer">
                                 <Typography style={{ textTransform: 'lowercase' }}>@{user.login}</Typography>
                             </Button>
                             {user.blog ? (
@@ -88,7 +89,8 @@ const Profile: FunctionComponent = () => {
                                     component="a"
                                     href={user.blog}
                                     startIcon={<Language />}
-                                    target="_blank">
+                                    target="_blank"
+                                    rel="noopener noreferrer">
                                     <Typography style={{ textTransform: 'lowercase' }}>Site</Typography>
                                 </Button>
                             ) : null}

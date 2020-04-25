@@ -62,7 +62,10 @@ const Events: FunctionComponent = () => {
                                               />
                                           }
                                           title={
-                                              <a href={`https://github.com/${event.repo.name}`} target="_blank">
+                                              <a
+                                                  href={`https://github.com/${event.repo.name}`}
+                                                  target="_blank"
+                                                  rel="noopener noreferrer">
                                                   {event.repo.name}
                                               </a>
                                           }
