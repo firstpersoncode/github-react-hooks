@@ -87,6 +87,7 @@
         "webpack-hot-middleware": "2.25.0"
     },
     "scripts": {
+        "start": "NODE_ENV=production yarn-or-npm run start:prod",
         "dev": "NODE_ENV=development yarn-or-npm run start:dev",
         "prod": "NODE_ENV=production yarn-or-npm run start:prod",
         "start:dev": "yarn-or-npm run build:dev && yarn-or-npm run server",
