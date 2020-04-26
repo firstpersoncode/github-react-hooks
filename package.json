@@ -4,7 +4,7 @@
     "description": "GitHub page with user search and repository search, build using React",
     "private": false,
     "main": "index.js",
-    "author": "Nasser Maronie <nassermaronie@gmail.com>",
+    "author": "Nasser Maronie <nasser.maronie@gmail.com>",
     "repository": {
         "type": "git",
         "url": "git@github.com:firstpersoncode/my-react-kit.git"
